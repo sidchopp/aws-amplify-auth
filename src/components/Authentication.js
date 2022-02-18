@@ -3,8 +3,6 @@ import { Authenticator } from '@aws-amplify/ui-react';
 import { Heading, Button, Text, View, Image, useTheme, Link } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-
-
 // For Authentication UI
 const components = {
 
