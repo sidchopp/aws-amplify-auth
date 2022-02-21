@@ -38,13 +38,16 @@ function Authentication() {
       {({ signOut, user }) => (
         <main >
           <Heading level={4}>
-            Hello {' '}{user.username}
+            Hello {' '}{user.username.toUpperCase()}
           </Heading>
-          <Button size="small" onClick={signOut}>Sign out</Button>
-          {/* <Api /> */}
+          <Heading level={7}>
+            If you seeing this page, it means you have successfully logged in.
+          </Heading>
+          <Button style={{ margin: '20px' }} size="small" onClick={signOut}>Sign out</Button>
         </main>
-      )}
-    </Authenticator>
+      )
+      }
+    </Authenticator >
   )
 }
 
